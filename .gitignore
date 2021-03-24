@@ -1,0 +1,7 @@
+
+*.pyc
+cifar100/data/cifar-100-python/*
+*.8293073
+cifar100/log/*
+*.json
+*.tar.gz
