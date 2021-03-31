@@ -5,3 +5,4 @@ cifar100/data/cifar-100-python/*
 cifar100/log/*
 *.json
 *.tar.gz
+*.tar
