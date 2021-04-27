@@ -6,3 +6,4 @@ cifar100/log/*
 *.json
 *.tar.gz
 *.tar
+cifar100/runs/*
