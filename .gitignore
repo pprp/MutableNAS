@@ -7,3 +7,4 @@ cifar100/log/*
 *.tar.gz
 *.tar
 cifar100/runs/*
+data/cifar-100-python/*
