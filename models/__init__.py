@@ -1,5 +1,9 @@
 from __future__ import absolute_import
 
+from models.cbam_resnext import cbam_resnext29_8x64d, cbam_resnext29_16x64d
+from models.genet import ge_resnext29_8x64d, ge_resnext29_16x64d
+from models.shake_shake import shake_resnet26_2x32d, shake_resnet26_2x64d
+from models.sknet import sk_resnext29_16x32d, sk_resnext29_16x64d
 from models.squeezenet import squeezenet
 from models.stochasticdepth import (stochastic_depth_resnet18,
                                     stochastic_depth_resnet34,
@@ -11,6 +15,7 @@ from models.xception import xception
 from .attention import *
 from .densenet import *
 from .dla import *
+from .dpn import DPN26
 from .dynamic_resnet20 import *
 from .efficientnetb0 import *
 from .googlenet import *
@@ -38,7 +43,6 @@ from .supernet import *
 from .vgg import *
 from .wideresidual import *
 from .xception import *
-from .dpn import DPN26
 
 __model_factory = {
     'dynamic': dynamic_resnet20,
@@ -78,9 +82,18 @@ __model_factory = {
     'stochastic_depth_resnet50': stochastic_depth_resnet50,
     'stochastic_depth_resnet101': stochastic_depth_resnet101,
     'stochastic_depth_resnet152': stochastic_depth_resnet152,
-    'wideresnet':wideresnet,
+    'wideresnet': wideresnet,
     'xception': xception,
-    'dpn':DPN26
+    'dpn': DPN26,
+    'shake_resnet26_2x32d': shake_resnet26_2x32d,
+    'shake_resnet26_2x64d': shake_resnet26_2x64d,
+    'ge_resnext29_8x64d': ge_resnext29_8x64d,
+    'ge_resnext29_16x64d': ge_resnext29_16x64d,
+    'sk_resnext29_16x32d': sk_resnext29_16x32d,
+    'sk_resnext29_16x64d': sk_resnext29_16x64d,
+    'cbam_resnext29_16x64d': cbam_resnext29_16x64d,
+    'cbam_resnext29_8x64d': cbam_resnext29_8x64d
+
 }
 
 
