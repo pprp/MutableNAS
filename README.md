@@ -36,28 +36,29 @@ Training Details:
 
 ### CIFAR10
 
-| Network                      | Params(M) | Train loss | Train top1 | Val loss | Val top1 | Hyper                                   | GPU(M) |
-| ---------------------------- | --------- | ---------- | ---------- | -------- | -------- | --------------------------------------- | ------ |
-| densenet_cifar               | 4.4       | 0.00156    | 99.99%     | 0.24     | 94.83%   | 0.1/256/w/o cutout                      | 7303   |
-| dla                          | 63        | 0.00164    | 99.99%     | 0.20     | 95.57%   | 0.1/256/w/o cutout                      | 5555   |
-| resnet50                     | 91        | 0.00105    | 100.0%     | 0.19     | 95.74%   | 0.1/256/w/o cutout                      | 10895  |
-| attention52                  | 214       | 0.00109    | 99.99%     | 0.49     | 90.62%   | 0.01/256/w/o cutout                     | 5691   |
-| dpn26                        | 45        | 0.00195    | 100.0%     | 0.16     | 95.43%   | 0.1/256/w/o cutout                      | 10260  |
-| resnet50_cutout              | 91        | 0.00103    | 100.0%     | 0.18     | 95.87%   | 0.1/128/ cutout=0.5                     | 10895  |
-| efficientnetb0               | 15        | 0.02396    | 99.32%     | 0.35     | 91.52%   | 0.1/128/w/o cutout                      | 3961   |
-| googlenet                    | 25        | 0.00216    | 100.0%     | 0.17     | 95.18%   | 0.1/128/w/o cutout                      | 7689   |
-| inceptionv3                  | 86        | 0.00183    | 100.0%     | 0.19     | 95.27%   | 0.1/128/w/o cutout                      | 8053   |
-| inceptionv4                  | 159       | 0.00292    | 99.99%     | 0.24     | 93.50%   | 0.1/64/w/o cutout                       | 7557   |
-| inception_resnet_v2          |           |            |            |          |          |                                         |        |
-| shake_resnet26_2x32d         | 23        | 0.16430    | 94.31%     | 0.12     | 95.94%   | 0.1/128/w/o cutout w/o mixup            | 2253   |
-| shake_resnet26_2x64d         | 91        | 0.10775    | 96.41%     | 0.10     | 96.94%   | 0.1/128/w/o cutout w/o mixup            | 3779   |
-| shake_resnet26_2x64d_mixup   | 91        | 0.97755    | 70.70%     | 0.27     | 96.53%   | 0.1/128/w/o cutout w mixup              |        |
-| shake_resnet26_2x64d_cutout  | 91        |            |            |          |          | 0.1/128/w cutout w/o mixup              |        |
-| shake_resnet26_2x64d_autoaug | 91        |            |            |          |          | 0.1/128/w/o cutout w/o mixup w/ autoaug |        |
-| resnet50_mixup               | 91        | 0.68908    | 76.88%     | 0.26     | 96.44%   | 0.1/128/w/o cutout/ w mixup             | 10895  |
-| resnet50_cutout_mixup        | 91        | 0.69914    | 76.15%     | 0.26     | 96.44%   | 0.1/128/cutout=0.5 /w mixup             | 10895  |
-| resnet50_autoaug             | 91        | 0.06838    | 97.63%     | 0.14     | 96.10%   | 0.1/128/w/o cutout w/o mixup/ w autoaug | 6479   |
-| resnet50_autoaug_mixup       | 91        | 0.86331    | 72.5%      | 0.28     | 96.95%   | 0.1/128/w/o cutout w/mixup w/ autoaug   | 6101   |
+| Network                            | Params(M) | Train loss | Train top1 | Val loss | Val top1 | Hyper                                   | GPU(M) |
+| ---------------------------------- | --------- | ---------- | ---------- | -------- | -------- | --------------------------------------- | ------ |
+| densenet_cifar                     | 4.4       | 0.00156    | 99.99%     | 0.24     | 94.83%   | 0.1/256/w/o cutout                      | 7303   |
+| dla                                | 63        | 0.00164    | 99.99%     | 0.20     | 95.57%   | 0.1/256/w/o cutout                      | 5555   |
+| resnet50                           | 91        | 0.00105    | 100.0%     | 0.19     | 95.74%   | 0.1/256/w/o cutout                      | 10895  |
+| attention52                        | 214       | 0.00109    | 99.99%     | 0.49     | 90.62%   | 0.01/256/w/o cutout                     | 5691   |
+| dpn26                              | 45        | 0.00195    | 100.0%     | 0.16     | 95.43%   | 0.1/256/w/o cutout                      | 10260  |
+| resnet50_cutout                    | 91        | 0.00103    | 100.0%     | 0.18     | 95.87%   | 0.1/128/ cutout=0.5                     | 10895  |
+| efficientnetb0                     | 15        | 0.02396    | 99.32%     | 0.35     | 91.52%   | 0.1/128/w/o cutout                      | 3961   |
+| googlenet                          | 25        | 0.00216    | 100.0%     | 0.17     | 95.18%   | 0.1/128/w/o cutout                      | 7689   |
+| inceptionv3                        | 86        | 0.00183    | 100.0%     | 0.19     | 95.27%   | 0.1/128/w/o cutout                      | 8053   |
+| inceptionv4                        | 159       | 0.00292    | 99.99%     | 0.24     | 93.50%   | 0.1/64/w/o cutout                       | 7557   |
+| inception_resnet_v2                |           |            |            |          |          |                                         |        |
+| shake_resnet26_2x32d               | 23        | 0.16430    | 94.31%     | 0.12     | 95.94%   | 0.1/128/w/o cutout w/o mixup            | 2253   |
+| shake_resnet26_2x64d               | 91        | 0.10775    | 96.41%     | 0.10     | 96.94%   | 0.1/128/w/o cutout w/o mixup            | 3779   |
+| shake_resnet26_2x64d_mixup         | 91        | 0.97755    | 70.70%     | 0.27     | 96.53%   | 0.1/128/w/o cutout w mixup              | 3779   |
+| shake_resnet26_2x64d_cutout        | 91        | 0.10788    | 96.37%     | 0.10     | 96.89%   | 0.1/128/w cutout w/o mixup              | 3779   |
+| shake_resnet26_2x64d_autoaug       | 91        | 0.10775    | 96.41%     | 0.10     | 96.94%   | 0.1/128/w/o cutout w/o mixup w/ autoaug | 3779   |
+| shake_resnet26_2x64d_autoaug_mixup | 91        | running    |            |          |          |                                         | 3779   |
+| resnet50_mixup                     | 91        | 0.68908    | 76.88%     | 0.26     | 96.44%   | 0.1/128/w/o cutout/ w mixup             | 10895  |
+| resnet50_cutout_mixup              | 91        | 0.69914    | 76.15%     | 0.26     | 96.44%   | 0.1/128/cutout=0.5 /w mixup             | 10895  |
+| resnet50_autoaug                   | 91        | 0.06838    | 97.63%     | 0.14     | 96.10%   | 0.1/128/w/o cutout w/o mixup/ w autoaug | 6479   |
+| resnet50_autoaug_mixup             | 91        | 0.86331    | 72.5%      | 0.28     | 96.95%   | 0.1/128/w/o cutout w/mixup w/ autoaug   | 6101   |
 
 
 
