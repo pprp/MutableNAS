@@ -49,7 +49,7 @@ Training Details:
 | inceptionv3                         | 86        | 0.00183    | 100.0%     | 0.19     | 95.27%   | 0.1/128/w/o cutout                      | 8053   |
 | inceptionv4                         | 159       | 0.00292    | 99.99%     | 0.24     | 93.50%   | 0.1/64/w/o cutout                       | 7557   |
 | inception_resnet_v2                 | 251       | 0.01001    | 99.79%     | 0.31     | 92.22%   | 0.1/64/w/o cutout                       | 8237   |
-| mobilenet                           |           |            |            |          |          |                                         | 2655   |
+| mobilenet                           | 13        | 0.00904    | 99.78%     | 0.37     | 91.94%   | 0.1/128/w/o cutout                      | 2655   |
 | mobilenetv2                         |           |            |            |          |          |                                         |        |
 | shake_resnet26_2x32d                | 23        | 0.16430    | 94.31%     | 0.12     | 95.94%   | 0.1/128/w/o cutout w/o mixup            | 2253   |
 | shake_resnet26_2x64d                | 91        | 0.10775    | 96.41%     | 0.10     | 96.94%   | 0.1/128/w/o cutout w/o mixup            | 3779   |
@@ -57,7 +57,7 @@ Training Details:
 | shake_resnet26_2x64d_cutout         | 91        | 0.10788    | 96.37%     | 0.10     | 96.89%   | 0.1/128/w cutout w/o mixup              | 3779   |
 | shake_resnet26_2x64d_autoaug        | 91        | 0.10775    | 96.41%     | 0.10     | 96.94%   | 0.1/128/w/o cutout w/o mixup w/ autoaug | 3779   |
 | shake_resnet26_2x64d_autoaug_mixup  | 91        | 0.97755    | 70.07%     | 0.27     | 96.53%   | 0.1/128/w/o cutout w/ mixup w/ autoaug  | 3779   |
-| shake_resnet26_2x64d_autoaug_cutout | 91        |            |            |          |          |                                         | 3779   |
+| shake_resnet26_2x64d_autoaug_cutout | 91        | 0.10788    | 96.37%     | 0.10     | 96.89%   | 0.1/128/w cutout w/o mixup w/ autoaug   | 3779   |
 | resnet50_mixup                      | 91        | 0.68908    | 76.88%     | 0.26     | 96.44%   | 0.1/128/w/o cutout/ w mixup             | 10895  |
 | resnet50_cutout_mixup               | 91        | 0.69914    | 76.15%     | 0.26     | 96.44%   | 0.1/128/cutout=0.5 /w mixup             | 10895  |
 | resnet50_autoaug                    | 91        | 0.06838    | 97.63%     | 0.14     | 96.10%   | 0.1/128/w/o cutout w/o mixup/ w autoaug | 6479   |
