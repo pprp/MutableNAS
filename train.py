@@ -207,6 +207,8 @@ def main():
                      'last_epoch': epoch,
                      'optimizer': optimizer.state_dict()
                      }, epoch, args.exp_name)
+    
+    logging.info("best top1 acc in validation datasets: %.2f" % (best_val_acc))
 
 
 def train_lu_shun(train_dataloader, val_dataloader, optimizer, scheduler, model, archloader, criterion, soft_criterion, args, seed, epoch, writer=None):
