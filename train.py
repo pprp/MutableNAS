@@ -185,6 +185,16 @@ def main():
         if (epoch + 1) % 2 == 0:
             top1_val, objs_val = valid(train_loader, val_loader, model, criterion,
                                        archloader, args, epoch)
+            
+            if best_val_acc < top1_val:
+                # update 
+                best_val_acc = top1_val 
+                save_checkpoint({'state_dict': model.state_dict(),
+                     'prec': top1_val,
+                     'last_epoch': epoch,
+                     'optimizer': optimizer.state_dict()
+                     }, epoch, args.exp_name, tag='best_')
+
             if args.local_rank == 0:
                 # model
                 if writer is not None:
