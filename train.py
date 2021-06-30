@@ -135,6 +135,7 @@ def main():
     torch.manual_seed(args.seed)
     cudnn.enabled = True
     torch.cuda.manual_seed(args.seed)
+    best_val_acc = -1
 
     logging.info('gpu device = %d' % args.gpu)
 
