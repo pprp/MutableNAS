@@ -22,7 +22,7 @@ from torch.optim import lr_scheduler
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-import model as mm
+import models as mm
 from datasets.dataset import get_train_loader, get_val_loader
 from utils.utils import (ArchLoader, AvgrageMeter, CrossEntropyLossSoft,
                          accuracy, create_exp_dir, reduce_mean,
