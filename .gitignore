@@ -8,3 +8,7 @@ cifar100/log/*
 *.tar
 cifar100/runs/*
 data/cifar-100-python/*
+data/cifar-10-python/*
+events*
+*.th 
+*.html
