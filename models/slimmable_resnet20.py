@@ -323,10 +323,10 @@ class MutableModel(nn.Module):
         # print(self.tb)
 
 
-def slimmable_resnet20():
+def slimmable_resnet20(num_classes=10):
     return MutableModel(arc_representation,
                         MutableBlock,
-                        [3, 3, 3])
+                        [3, 3, 3], num_classes=num_classes)
 
 
 if __name__ == "__main__":

@@ -157,7 +157,7 @@ class ArchLoader():
         return softmax
 
 
-def get_train_loader(batch_size, num_workers, clss='cifar10', cutout=0):
+def get_train_loader(batch_size, num_workers, clss='cifar100', cutout=0):
     assert clss in ['cifar10', 'cifar100']
 
     # 1. get transform

@@ -45,11 +45,11 @@ from .wideresidual import *
 from .xception import *
 
 __model_factory = {
-    'dynamic': dynamic_resnet20,
-    'masked': masked_resnet20,
+    'dynamic': dynamic_resnet20,# 参考once for all那版
+    'masked': masked_resnet20, #基于mask进行实现
     'resnet20': resnet20,
     'sample': sample_resnet20,
-    'slimmable': slimmable_resnet20,
+    'slimmable': slimmable_resnet20, #最开始那版slimmable network
     'super': SuperNet,
     'densenet': densenet_cifar,
     'senet': senet18_cifar,
@@ -104,7 +104,7 @@ def show_available_models():
     print(list(__model_factory.keys()))
 
 
-def build_model(name, num_classes=100):
+def build_model(name, num_classes=10):
     avai_models = list(__model_factory.keys())
     if name not in avai_models:
         raise KeyError(

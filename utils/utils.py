@@ -115,19 +115,6 @@ class DataIterator(object):
             _, data = next(self.iterator)
         return data[0], data[1]
 
-
-# arch_loader = ArchLoader("data/benchmark.json")
-# for key , arch in arch_loader:
-#     print(key, arch)
-# print(arch_loader.get_arch_list())
-# for i in range(20):
-#     lst= arch_loader.generate_width_to_narrow(i, 20)
-#     print(lst, sum(lst))
-# print(arch_loader.generate_niu_fair_batch(random.randint(0,100))[-1].tolist())
-# for i in range(10):
-#     ta = arch_loader.generate_spos_like_batch()
-#     print(type(ta),ta)
-
 class CrossEntropyLabelSmooth(nn.Module):
 
     def __init__(self, num_classes, epsilon):
