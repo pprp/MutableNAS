@@ -1,6 +1,6 @@
 # Channel Search for ResNet20
 
-[TOC]
+CVPR2021 Workshop Neural Architecture Search 1st lightweight NAS challenge and moving beyond
 
 ## Feature
 
@@ -19,11 +19,6 @@
 - [ ] distributed data parrallel to support
 - [ ] support transformer models
 - [ ] support differenet datasets such as tiny imagenet
-
-## Get Started
-
-
-
 
 
 ## Experimental Results
